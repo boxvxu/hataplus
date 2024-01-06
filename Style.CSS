@@ -2,10 +2,16 @@ body {
     font-family: "Arial";
 }
 
-nav {
-    background-color: #1f1f56;
+
+.wrapper{
+    margin: auto;
+    max-width: 960px;
     display: flex;
     justify-content: space-between;
+}
+ nav {
+    background-color: #1f1f56;
+    
 }
 
 main {
