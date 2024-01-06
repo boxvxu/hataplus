@@ -1,0 +1,269 @@
+body {
+    font-family: "Arial";
+}
+
+nav {
+    background-color: #1f1f56;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    column-gap: 27px;
+    padding-top: 35px;
+    max-width: 960px;
+    margin: auto;
+}
+
+.menu a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #b1b1d2;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 25px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+
+}
+
+p,
+figure,
+figcaption {
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Arial";
+
+}
+
+.contaener {
+    display: flex;
+    column-gap: 60px;
+    padding-top: 42px;
+    margin: auto;
+    max-width: 960px;
+}
+
+.contaener a {
+    display: block;
+}
+
+.box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact{
+    position: relative;
+    padding-left: 28px;
+
+}
+.contact::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    background: no-repeat;
+}
+.phone::before{
+    background-image: url('icons/phone.png');
+
+}
+.mail {
+    font-size: 16px;
+
+    text-decoration: underline;
+
+
+}
+.mail::before{
+    background-image: url(icons/email.svg);
+}
+
+.skype {
+    font-size: 16px;
+    
+}
+.skype::before{
+    background-image: url(icons/skype.svg);
+
+}
+
+.calling {
+    padding: 15px 30px;
+    border: #fd8300 2px solid;
+    border-radius: 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+
+.price {
+    text-align: center;
+    color: white;
+    background-image: url('img/Background.png');
+    background-color: black;
+    background-size: cover;
+    padding: 60px;
+}
+
+.price h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.price p {
+    font-size: 14px;
+}
+
+.price strong {
+    font-size: 40px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.price sup {
+    font-size: 24px;
+}
+
+article a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+article p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+
+h1 {
+    font-size: 30px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab"
+}
+
+.houses {
+    display: flex;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    column-gap: 30px;
+}
+
+.houses h3 {
+    margin: 0%;
+    font-size: 14px;
+    color: #1f1f56;
+    font-weight: bold;
+}
+
+.Categories {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    padding-left: 16px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+aside nav {
+    flex-direction: column;
+    width: 220px;
+}
+
+.Typesofhouses {
+    background-color: #e4e4ec;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.Typesofhouses li {
+    display: block;
+}
+
+.Typesofhouses a {
+    font-size: 14px;
+    color: #25252c;
+    font-family: "Arial";
+    display: block;
+    padding-left: 16px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    position: relative;
+}
+
+.Typesofhouses a:hover {
+    background-color: #fd8300;
+}
+.Typesofhouses > li > a::before{
+    content:"" ;
+    position: absolute;
+    border: 1px solid black;
+    height: 5px;
+    width: 5px;
+    right: 10px;
+    top: 10px;
+    transform: rotate(45deg);
+    top: 18px;
+    border-bottom: none;
+    border-left: none
+    ;
+
+
+}
+.Typesofhouses a:hover::before{
+    transform: rotate(-225deg);
+}
+
+.sublist {
+    flex-direction: column;
+}
+
+.sublist a {
+    padding-left: 30px;
+
+}
+
+.sublist a:hover {
+    background-color: #cecedd;
+}
+
+footer {
+    background-color: #ededf5;
+
+}
+
+.hataplus {
+    background-color: #dcdce6;
+    font-size: 13px;
+    color: #9999a6;
+    font-family: "Arial";
+    text-align: center;
+    padding: 15px;
+
+}
