@@ -1,5 +1,13 @@
-body {
+@font-face{
+    font-family: "Roboto Slab";
+    src: url(Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+body, html {
+    margin: 0px;
     font-family: "Arial";
+    border-radius: 0px;
 }
 
 
@@ -54,8 +62,7 @@ a {
 
 .contaener {
     display: flex;
-    column-gap: 60px;
-    padding-top: 42px;
+    column-gap: 30px;
     margin: auto;
     max-width: 960px;
 }
@@ -67,13 +74,22 @@ a {
 .box {
     padding-top: 30px;
     padding-bottom: 30px;
+    min-width: 220px;
 }
 
 .contact{
     position: relative;
     padding-left: 28px;
+    color: #25252c;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
 
 }
+.contact:hover{
+    color: #fd8300;
+}
+
 .contact::before{
     content: '';
     position:absolute;
@@ -90,7 +106,7 @@ a {
 }
 .mail {
     font-size: 16px;
-
+    font-weight: 400;
     text-decoration: underline;
 
 
@@ -101,6 +117,7 @@ a {
 
 .skype {
     font-size: 16px;
+    font-weight: 400;
     
 }
 .skype::before{
@@ -109,12 +126,21 @@ a {
 }
 
 .calling {
-    padding: 15px 30px;
+    padding: 15px 15px;
     border: #fd8300 2px solid;
-    border-radius: 25px;
+    border-radius:  25px;
     font-size: 16px;
     box-sizing: border-box;
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #25252c;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.calling:hover{
+    color: white;
+    background-color: #fd8300;
 }
 
 .price {
@@ -154,6 +180,14 @@ article a {
     text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
+    margin: 25px 0px;
+    display: block;
+
+}
+article a:hover{
+    color: #1f1f56;
+    font-size: 18px;
+    margin-bottom: 21px;
 }
 
 article p {
@@ -223,7 +257,7 @@ aside nav {
     position: relative;
 }
 
-.Typesofhouses a:hover {
+.Typesofhouses > li:hover > a {
     background-color: #fd8300;
 }
 .Typesofhouses > li > a::before{
@@ -242,14 +276,17 @@ aside nav {
 
 
 }
-.Typesofhouses a:hover::before{
+.Typesofhouses > li:hover > a::before{
     transform: rotate(-225deg);
 }
-
 .sublist {
     flex-direction: column;
+    display: none;
 }
 
+.Typesofhouses li:hover .sublist{
+   display: block; 
+}
 .sublist a {
     padding-left: 30px;
 
@@ -261,6 +298,7 @@ aside nav {
 
 footer {
     background-color: #ededf5;
+    margin-top: 45px;
 
 }
 
@@ -272,4 +310,36 @@ footer {
     text-align: center;
     padding: 15px;
 
+}
+.information li a{
+  font-size: 14px;
+  line-height: 26px;
+  color: #666666;
+}
+.information li a:hover{
+    text-decoration: underline;
+    color: #fd8300;
+}
+.projects{
+    margin: 30px 0px;
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+table{
+    background-color: #e4e4ec;
+    border-radius: 3px;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #1f1f56;
+    color: white;
+}
+td{
+    padding: 15px 20px;
+}
+th{
+    padding: 18px 20px 13px 20px;
+    
 }
